@@ -29,7 +29,7 @@ namespace BigBangGame
                 Console.WriteLine(moveList[i].moveType);
             }
             Console.Write("Select your gestured move using 1-5: ");
-            selectedHumanMove = Convert.ToBoolean(Console.ReadLine());
+            selectedHumanMove = Convert.ToInt32(Console.ReadLine());
             switch (selectedHumanMove)
             {
             playerMove = moveList[0];
@@ -51,11 +51,13 @@ namespace BigBangGame
 
         }
 
+        
         }
-        public virtual void MoveChoosen()
+        public virtual void ModeChoosen()
         {
 
-        }
+        
+        }   
 
     }
 
